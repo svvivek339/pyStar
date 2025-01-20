@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle farthest-corner at 100% 110%, #102a43, #0260b8);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 60px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 5px #02ddff;
+        }
+
+        .glass-container h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .glass-container label {
+            color: #ffffff;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .glass-container input[type="text"],
+        .glass-container input[type="password"]
+        /* .glass-container input[type="submit"] */
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .glass-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .glass-container button {
+            width: 105%;
+            padding: 10px;
+            background: #4caf50;
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .glass-container button:hover {
+            background: #45a049;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-container label {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h2>Sign in</h2>
+        <form action="index.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="show-password">
+                <label for="show-password">Show Password</label>
+            </div>
+            <br>
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
